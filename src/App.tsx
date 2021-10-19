@@ -1,43 +1,47 @@
 import './App.css';
+import { LoggedIn } from './components/state/LoggedIn';
 // import { Container } from './components/Container';
 // import { Button } from './components/Button';
 // import { Input } from './components/Input';
 // import { Greet } from './components/Greet';
 // import { Heading } from './components/Heading';
 // import { Oscar } from './components/Oscar';
-import { Person } from './components/Person';
-import { PersonList } from './components/PersonList';
+// import { Person } from './components/Person';
+// import { PersonList } from './components/PersonList';
 // import { Status } from './components/Status';
 
 function App() {
   // Passing simple props
-  const personName = {
-    fName: "Sandeep",
-    lName: "Kumar"
-  }
+  // const personName = {
+  //   fName: "Sandeep",
+  //   lName: "Kumar"
+  // }
   // Array Props 
-  const nameList = [
-    {
-      fName: "Sandy",
-      lName: "Kumar"
-    },
-    {
-      fName: "Deep",
-      lName: "Kumar"
-    },
-    {
-      fName: "Ravi",
-      lName: "Kumar"
-    }
-  ]
+  // const nameList = [
+  //   {
+  //     fName: "Sandy",
+  //     lName: "Kumar"
+  //   },
+  //   {
+  //     fName: "Deep",
+  //     lName: "Kumar"
+  //   },
+  //   {
+  //     fName: "Ravi",
+  //     lName: "Kumar"
+  //   }
+  // ]
   return (
     <div className="App">
-      <Person name={personName} />
-      <PersonList names={nameList} />
+
+      <LoggedIn />
+
+      {/* <Person name={personName} />
+      <PersonList names={nameList} /> */}
 
       {/* Style Props */}
       {/* <Container styles={{border:'1px solid red', padding:'1rem'}}/> */}
-      
+
 
       {/* Even handle */}
       {/* <Button handleClick={(event, id)=>{
