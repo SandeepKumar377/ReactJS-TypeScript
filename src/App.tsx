@@ -1,6 +1,8 @@
 import './App.css';
-import { Box } from './components/context/Box';
-import { ThemeContextProvider } from './components/context/ThemeContext';
+import { User } from './components/context/User';
+import { UserContextProvider } from './components/context/UserContext';
+// import { Box } from './components/context/Box';
+// import { ThemeContextProvider } from './components/context/ThemeContext';
 // import { Counter } from './components/state/Counter';
 // import { LoggedIn } from './components/state/LoggedIn';
 // import { User } from './components/state/User';
@@ -38,9 +40,13 @@ function App() {
   return (
     <div className="App">
 
-      <ThemeContextProvider>
+    <UserContextProvider>
+      <User/>
+    </UserContextProvider>
+
+      {/* <ThemeContextProvider>
         <Box />
-      </ThemeContextProvider>
+      </ThemeContextProvider> */}
 
       {/* <Counter/> */}
 
