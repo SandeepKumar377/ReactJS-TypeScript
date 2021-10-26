@@ -1,5 +1,7 @@
 import './App.css';
-import Counter from './components/class/Counter';
+import Private from './components/auth/Private';
+import Profile from './components/auth/Profile';
+// import Counter from './components/class/Counter';
 // import DomRef from './components/ref/DomRef';
 // import MutableRef from './components/ref/MutableRef';
 // import { User } from './components/context/User';
@@ -42,8 +44,9 @@ function App() {
   // ]
   return (
     <div className="App">
+      <Private isLogedIn={true} component={Profile} />
 
-    <Counter message="This is Counter" />
+    {/* <Counter message="This is Counter" /> */}
       {/* <DomRef/>
       <MutableRef/> */}
 
