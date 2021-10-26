@@ -1,5 +1,6 @@
 import './App.css';
-import List from './components/gererics/List';
+import { RandomNumber } from './components/restriction/RandomNumber';
+// import List from './components/gererics/List';
 // import Private from './components/auth/Private';
 // import Profile from './components/auth/Profile';
 // import Counter from './components/class/Counter';
@@ -46,8 +47,9 @@ function App() {
   return (
     <div className="App">
 
-      <List items={['Superman', 'IronMan', 'Batman']} onClick={(item) => console.log(item)} />
-      <List items={[1, 2, 3]} onClick={(item) => console.log(item)} />
+    <RandomNumber value={10} isPositive />
+      {/* <List items={['Superman', 'IronMan', 'Batman']} onClick={(item) => console.log(item)} />
+      <List items={[1, 2, 3]} onClick={(item) => console.log(item)} /> */}
       
       {/* <Private isLogedIn={true} component={Profile} /> */}
 
