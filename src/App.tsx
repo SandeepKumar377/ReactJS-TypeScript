@@ -1,6 +1,7 @@
 import './App.css';
-import Private from './components/auth/Private';
-import Profile from './components/auth/Profile';
+import List from './components/gererics/List';
+// import Private from './components/auth/Private';
+// import Profile from './components/auth/Profile';
 // import Counter from './components/class/Counter';
 // import DomRef from './components/ref/DomRef';
 // import MutableRef from './components/ref/MutableRef';
@@ -44,9 +45,13 @@ function App() {
   // ]
   return (
     <div className="App">
-      <Private isLogedIn={true} component={Profile} />
 
-    {/* <Counter message="This is Counter" /> */}
+      <List items={['Superman', 'IronMan', 'Batman']} onClick={(item) => console.log(item)} />
+      <List items={[1, 2, 3]} onClick={(item) => console.log(item)} />
+      
+      {/* <Private isLogedIn={true} component={Profile} /> */}
+
+      {/* <Counter message="This is Counter" /> */}
       {/* <DomRef/>
       <MutableRef/> */}
 
