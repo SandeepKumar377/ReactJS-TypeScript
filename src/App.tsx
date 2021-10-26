@@ -1,5 +1,6 @@
 import './App.css';
-import { RandomNumber } from './components/restriction/RandomNumber';
+import { Toast } from './components/templateLiterals/Toast';
+// import { RandomNumber } from './components/restriction/RandomNumber';
 // import List from './components/gererics/List';
 // import Private from './components/auth/Private';
 // import Profile from './components/auth/Profile';
@@ -47,7 +48,8 @@ function App() {
   return (
     <div className="App">
 
-    <RandomNumber value={10} isPositive />
+      <Toast position='center' />
+    {/* <RandomNumber value={10} isPositive /> */}
       {/* <List items={['Superman', 'IronMan', 'Batman']} onClick={(item) => console.log(item)} />
       <List items={[1, 2, 3]} onClick={(item) => console.log(item)} /> */}
       
