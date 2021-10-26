@@ -1,6 +1,8 @@
 import './App.css';
-import { User } from './components/context/User';
-import { UserContextProvider } from './components/context/UserContext';
+import DomRef from './components/ref/DomRef';
+import MutableRef from './components/ref/MutableRef';
+// import { User } from './components/context/User';
+// import { UserContextProvider } from './components/context/UserContext';
 // import { Box } from './components/context/Box';
 // import { ThemeContextProvider } from './components/context/ThemeContext';
 // import { Counter } from './components/state/Counter';
@@ -40,9 +42,12 @@ function App() {
   return (
     <div className="App">
 
-    <UserContextProvider>
+      <DomRef />
+      <MutableRef />
+
+      {/* <UserContextProvider>
       <User/>
-    </UserContextProvider>
+    </UserContextProvider> */}
 
       {/* <ThemeContextProvider>
         <Box />
