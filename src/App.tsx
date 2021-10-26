@@ -42,6 +42,7 @@ function App() {
   return (
     <div className="App">
 
+      {/* Use of useRef and useEffect Hook  */}
       <DomRef />
       <MutableRef />
 
