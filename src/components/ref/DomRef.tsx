@@ -1,6 +1,6 @@
 import { useRef, useEffect } from 'react'
 
-const RefHook = () => {
+const DomRef = () => {
     const inputRef = useRef<HTMLInputElement>(null!)
     useEffect(() => {
         inputRef.current.focus()
@@ -12,4 +12,4 @@ const RefHook = () => {
     )
 }
 
-export default RefHook
+export default DomRef

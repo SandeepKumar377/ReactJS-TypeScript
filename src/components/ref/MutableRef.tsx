@@ -1,6 +1,6 @@
 import { useState, useRef, useEffect } from 'react'
 
-const MutableRefHook = () => {
+const MutableRef = () => {
     const [timer, setTimer] = useState(0)
     const interValRef = useRef<number | null>(null)
     const stopTimer = () => {
@@ -24,4 +24,4 @@ const MutableRefHook = () => {
     )
 }
 
-export default MutableRefHook
+export default MutableRef
