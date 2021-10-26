@@ -8,7 +8,6 @@ const MutableRef = () => {
             window.clearInterval(interValRef.current)
         }
     }
-
     useEffect(() => {
         interValRef.current = window.setInterval(() => {
             setTimer((timer) => timer + 1)
@@ -19,7 +18,7 @@ const MutableRef = () => {
     }, [])
     return (
         <div>
-            Hook Timer -- {timer} -
+            Hook Timer - {timer} -
             <button onClick={() => stopTimer()} >Stop Timer</button>
         </div>
     )

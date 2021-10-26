@@ -7,10 +7,9 @@ const DomRef = () => {
     }, [])
     return (
         <div>
-            <input type="text" name="inputRef" ref={inputRef}/>
+            <input type="text" name="inputRef" ref={inputRef} />
         </div>
     )
 }
-
 
 export default DomRef
