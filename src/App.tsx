@@ -1,6 +1,7 @@
 import './App.css';
-import DomRef from './components/ref/DomRef';
-import MutableRef from './components/ref/MutableRef';
+import Counter from './components/class/Counter';
+// import DomRef from './components/ref/DomRef';
+// import MutableRef from './components/ref/MutableRef';
 // import { User } from './components/context/User';
 // import { UserContextProvider } from './components/context/UserContext';
 // import { Box } from './components/context/Box';
@@ -42,8 +43,9 @@ function App() {
   return (
     <div className="App">
 
-      <DomRef/>
-      <MutableRef/>
+    <Counter message="This is Counter" />
+      {/* <DomRef/>
+      <MutableRef/> */}
 
       {/* <UserContextProvider>
       <User/>
