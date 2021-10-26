@@ -1,6 +1,6 @@
 import './App.css';
-import DomRef from './components/refHook/DomRef';
-import MutableRef from './components/refHook/MutableRef';
+import MutableRefHook from './components/refHook/MutableRefHook';
+import RefHook from './components/refHook/RefHook';
 // import { User } from './components/context/User';
 // import { UserContextProvider } from './components/context/UserContext';
 // import { Box } from './components/context/Box';
@@ -42,8 +42,8 @@ function App() {
   return (
     <div className="App">
 
-      <DomRef />
-      <MutableRef />
+    <RefHook/>
+    <MutableRefHook/>
 
       {/* <UserContextProvider>
       <User/>
